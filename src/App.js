@@ -23,7 +23,7 @@ function App() {
   return (
     <div className='flex flex-col text-white font-custom justify-center items-center bg-[#141316] h-screen'>
       <div className="flex justify-center items-center mb-2 ">
-        <input type="text" value={location} onChange={(e)=>setLocation(e.target.value)} className='w-[250px] px-4 py-2 text-black outline-none border-none rounded-xl' />
+        <input type="text" value={location}  onChange={(e)=>setLocation(e.target.value)} className='w-[250px] px-4 py-2 text-black outline-none border-none rounded-xl' />
         <button type='submit'onClick={()=>fatch()} className='px-4 py-2 ml-2 bg-blue-500 rounded-xl'>Submit</button>
       </div>
       { submitted ? (
